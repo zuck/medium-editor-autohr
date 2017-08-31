@@ -20,9 +20,9 @@
     onKeypress: function (keyPressEvent) {
      if (MediumEditor.util.isKey(keyPressEvent, [MediumEditor.util.keyCode.ENTER])) {
         var hr_start = this.base.getSelectedParentElement().textContent;
-        if (hr_start == '---') {
+        if (hr_start === '---') {
+          this.base.getSelectedParentElement().textContent = this.base.getSelectedParentElement().textContent.slice(4).trim();
           this.base.execAction('insertHorizontalRule');
-          this.base.getSelectedParentElement().textContent = this.base.getSelectedParentElement().textContent.slice(3).trim();
         }
       }
     }
