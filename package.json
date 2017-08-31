@@ -1,11 +1,11 @@
 {
   "name": "medium-editor-autohr",
   "version": "0.0.1",
-  "description": "An extension for medium editor which auto adds horizontal rules.",
+  "description": "An extension for medium editor which auto adds horizontal rules",
   "main": "dist/autohr.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuck/medium-repository-autohr.git"
+    "url": "git+https://github.com/zuck/medium-editor-autohr.git"
   },
   "keywords": [
     "medium-editor",
