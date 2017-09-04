@@ -1,6 +1,6 @@
 # medium-editor-autohr
 
-[![npm version](https://badge.fury.io/js/medium-editor-autohr.svg)](https://badge.fury.io/js/medium-editor-autohr)
+[![npm version](https://badge.fury.io/js/medium-editor-autohr.svg)](https://www.npmjs.com/package/medium-editor-autohr)
 
 > An extension for [Medium Editor](https://github.com/yabwe/medium-editor) which auto adds horizontal rules.
 
