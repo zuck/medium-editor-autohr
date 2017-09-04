@@ -1,6 +1,10 @@
 # medium-editor-autohr
 
-An extension for [Medium Editor](https://github.com/yabwe/medium-editor) which auto adds horizontal rules.
+[![npm version](https://badge.fury.io/js/medium-editor-autohr.svg)](https://badge.fury.io/js/medium-editor-autohr)
+
+> An extension for [Medium Editor](https://github.com/yabwe/medium-editor) which auto adds horizontal rules.
+
+![Demo](https://rawgit.com/zuck/medium-editor-autohr/master/art/screenshot.gif)
 
 ## How to install
 
@@ -19,3 +23,11 @@ var editor = new MediumEditor('.editable', {
     }
 });
 ```
+
+Now, type `---` followed by `ENTER`: an `<hr>` element will appear!
+
+## License
+
+Copyright (c) 2017 Emanuele Bertoldi
+
+[MIT License](http://en.wikipedia.org/wiki/MIT_License)
