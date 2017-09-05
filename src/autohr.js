@@ -17,17 +17,15 @@
   var AutoHR = MediumEditor.Extension.extend({
     name: 'autohr',
     init: function () {
-      this.subscribe('editableKeypress', this.onKeypress.bind(this));
+      this.subscribe('editableKeydownEnter', this.onInput.bind(this));
     },
-    onKeypress: function (keyPressEvent) {
-      if (MediumEditor.util.isKey(keyPressEvent, [MediumEditor.util.keyCode.ENTER])) {
-        var parentElement = this.base.getSelectedParentElement();
-        var hrStart = parentElement.textContent;
-        if (hrStart === HR_TOKEN) {
-          this.base.execAction('insertHorizontalRule');
-          this.base.execAction('insertParagraph');
-          parentElement.parentNode.removeChild(parentElement);
-        }
+    onInput: function (evt) {
+      var parentElement = this.base.getSelectedParentElement();
+      if (parentElement.textContent === HR_TOKEN) {
+        this.base.execAction('delete');
+        this.base.execAction('delete');
+        this.base.execAction('delete');
+        this.base.execAction('insertHorizontalRule');
       }
     }
   });
