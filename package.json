@@ -1,6 +1,6 @@
 {
   "name": "medium-editor-autohr",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "An extension for medium editor which auto adds horizontal rules",
   "main": "src/autohr.js",
   "repository": {
